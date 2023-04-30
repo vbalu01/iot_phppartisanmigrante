@@ -1,0 +1,5 @@
+server: server622175765.mysql.database.azure.com
+port: 3306
+database: iot
+user: iotUser
+pwd: incidens123
