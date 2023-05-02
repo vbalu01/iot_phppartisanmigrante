@@ -14,11 +14,5 @@ use Illuminate\Support\Facades\DB;
 */
 
 Route::get('/', function () {
-    try {
-        DB::connection()->getPdo();
-        print_r("müxik");
-    } catch (\Exception $e) {
-        print_r("Could not connect to the database.  Please check your configuration. error:" . $e );
-    }
     return view('welcome');
 });
