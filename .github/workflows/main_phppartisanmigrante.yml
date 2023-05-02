@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'phppartisanmigrante'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E571F2628DE540AEA75CBFB952EEB8F9 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1577AD3821D648A89397039D8F4E43D8 }}
           package: .
