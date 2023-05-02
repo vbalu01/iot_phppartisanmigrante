@@ -11,6 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
+        // php artisan migrate_in_order
         Schema::create('sensors', function (Blueprint $table) {
             $table->id("ID");
             $table->string("name",55);
