@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\DB;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
+
+Route::get('/',[App\Http\Controllers\MainController::class,'viewData']);
+Route::get('/uzem/{id}',[App\Http\Controllers\MainController::class,'uzem']);
