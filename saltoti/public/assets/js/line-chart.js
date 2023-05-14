@@ -1412,6 +1412,7 @@ if ($('#seolinechart4').length) {
 /*-------------- 9 line chart chartjs end ------------*/
 
 /*-------------- 10 line chart amchart start ------------*/
+/*
 if ($('#user-statistics').length) {
     var chart = AmCharts.makeChart("user-statistics", {
         "type": "serial",
@@ -1473,8 +1474,8 @@ if ($('#user-statistics').length) {
             "enabled": false
         },
         "dataProvider": [{
-            "date": "2012-07-27",
-            "value": 13
+            "date": "2012-07-27 13:23:43",
+            "value": 13.2
         }, {
             "date": "2012-07-28",
             "value": 11
@@ -2039,7 +2040,7 @@ if ($('#user-statistics').length) {
         }]
     });
 }
-
+*/
 /*-------------- 10 line chart amchart end ------------*/
 
 /*-------------- 11 line chart amchart start ------------*/
