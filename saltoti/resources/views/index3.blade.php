@@ -6,22 +6,22 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>srtdash - SEO Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png" href="assets/images/icon/favicon.ico">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/themify-icons.css">
-    <link rel="stylesheet" href="assets/css/metisMenu.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/slicknav.min.css">
+    <link rel="shortcut icon" type="image/png" href="{{ asset('/images/icon/favicon.ico') }}">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('/css/font-awesome.min.css') }}"  type="text/css">
+    <link rel="stylesheet" href="{{ asset('/css/themify-icons.css') }}"  type="text/css">
+    <link rel="stylesheet" href="{{ asset('/css/metisMenu.css') }}"  type="text/css">
+    <link rel="stylesheet" href="{{ asset('/css/owl.carousel.min.css') }}"  type="text/css">
+    <link rel="stylesheet" href="{{ asset('/css/slicknav.min.css') }}"  type="text/css">
     <!-- amchart css -->
     <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
     <!-- others css -->
-    <link rel="stylesheet" href="assets/css/typography.css">
-    <link rel="stylesheet" href="assets/css/default-css.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="{{ asset('/css/typography.css') }}"  type="text/css">
+    <link rel="stylesheet" href="{{ asset('/css/default-css.css') }}"  type="text/css">
+    <link rel="stylesheet" href="{{ asset('/css/styles.css') }}"  type="text/css">
+    <link rel="stylesheet" href="{{ asset('/css/responsive.css') }}"  type="text/css">
     <!-- modernizr css -->
-    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="{{asset('/js/vendor/modernizr-2.8.3.min.js' }}" ></script>
 </head>
 
 <body>
@@ -39,7 +39,7 @@
         <div class="sidebar-menu">
             <div class="sidebar-header">
                 <div class="logo">
-                    <a href="index.html"><img src="assets/images/icon/logo.png" alt="logo"></a>
+                    <a href="index.html"><img src="{{ asset('/images/icon/logo.png') }}" alt="logo"></a>
                 </div>
             </div>
             <div class="main-menu">
@@ -142,7 +142,7 @@
                                     <div class="nofity-list">
                                         <a href="#" class="notify-item">
                                             <div class="notify-thumb">
-                                                <img src="assets/images/author/author-img1.jpg" alt="image">
+                                                <img src="{{ asset('/images/author/author-img1.jpg') }}" alt="image">
                                             </div>
                                             <div class="notify-text">
                                                 <p>Aglae Mayer</p>
@@ -152,7 +152,7 @@
                                         </a>
                                         <a href="#" class="notify-item">
                                             <div class="notify-thumb">
-                                                <img src="assets/images/author/author-img2.jpg" alt="image">
+                                                <img src="{{ asset('/images/author/author-img2.jpg') }}" alt="image">
                                             </div>
                                             <div class="notify-text">
                                                 <p>Aglae Mayer</p>
@@ -162,7 +162,7 @@
                                         </a>
                                         <a href="#" class="notify-item">
                                             <div class="notify-thumb">
-                                                <img src="assets/images/author/author-img3.jpg" alt="image">
+                                                <img src="{{ asset('/images/author/author-img3.jpg') }}" alt="image">
                                             </div>
                                             <div class="notify-text">
                                                 <p>Aglae Mayer</p>
@@ -172,7 +172,7 @@
                                         </a>
                                         <a href="#" class="notify-item">
                                             <div class="notify-thumb">
-                                                <img src="assets/images/author/author-img4.jpg" alt="image">
+                                                <img src="{{ asset('/images/author/author-img4.jpg') }}" alt="image">
                                             </div>
                                             <div class="notify-text">
                                                 <p>Aglae Mayer</p>
@@ -182,7 +182,7 @@
                                         </a>
                                         <a href="#" class="notify-item">
                                             <div class="notify-thumb">
-                                                <img src="assets/images/author/author-img2.jpg" alt="image">
+                                                <img src="{{ asset('/images/author/author-img2.jpg') }}" alt="image">
                                             </div>
                                             <div class="notify-text">
                                                 <p>Aglae Mayer</p>
@@ -192,7 +192,7 @@
                                         </a>
                                         <a href="#" class="notify-item">
                                             <div class="notify-thumb">
-                                                <img src="assets/images/author/author-img1.jpg" alt="image">
+                                                <img src="{{ asset('/images/author/author-img1.jpg') }}" alt="image">
                                             </div>
                                             <div class="notify-text">
                                                 <p>Aglae Mayer</p>
@@ -202,7 +202,7 @@
                                         </a>
                                         <a href="#" class="notify-item">
                                             <div class="notify-thumb">
-                                                <img src="assets/images/author/author-img3.jpg" alt="image">
+                                                <img src="{{ asset('/images/author/author-img3.jpg') }}" alt="image">
                                             </div>
                                             <div class="notify-text">
                                                 <p>Aglae Mayer</p>
@@ -235,7 +235,7 @@
                     </div>
                     <div class="col-sm-6 clearfix">
                         <div class="user-profile pull-right">
-                            <img class="avatar user-thumb" src="assets/images/author/avatar.png" alt="avatar">
+                            <img class="avatar user-thumb" src="{{ asset('/images/author/avatar.png') }}" alt="avatar">
                             <h4 class="user-name dropdown-toggle" data-toggle="dropdown">Kumkum Rai <i class="fa fa-angle-down"></i></h4>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="#">Message</a>
@@ -412,7 +412,7 @@
                                 <div class="testimonial-carousel owl-carousel">
                                     <div class="tst-item">
                                         <div class="tstu-img">
-                                            <img src="assets/images/team/team-author1.jpg" alt="author image">
+                                            <img src="{{ asset('/images/team/team-author1.jpg') }}" alt="author image">
                                         </div>
                                         <div class="tstu-content">
                                             <h4 class="tstu-name">Abel Franecki</h4>
@@ -422,7 +422,7 @@
                                     </div>
                                     <div class="tst-item">
                                         <div class="tstu-img">
-                                            <img src="assets/images/team/team-author2.jpg" alt="author image">
+                                            <img src="{{ asset('/images/team/team-author2.jpg') }}" alt="author image">
                                         </div>
                                         <div class="tstu-content">
                                             <h4 class="tstu-name">Abel Franecki</h4>
@@ -432,7 +432,7 @@
                                     </div>
                                     <div class="tst-item">
                                         <div class="tstu-img">
-                                            <img src="assets/images/team/team-author3.jpg" alt="author image">
+                                            <img src="{{ asset('/images/team/team-author3.jpg') }}" alt="author image">
                                         </div>
                                         <div class="tstu-content">
                                             <h4 class="tstu-name">Abel Franecki</h4>
@@ -637,14 +637,14 @@
     </div>
     <!-- offset area end -->
     <!-- jquery latest version -->
-    <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="{{ asset('/js/vendor/jquery-2.2.4.min.js') }}"></script>
     <!-- bootstrap 4 js -->
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/metisMenu.min.js"></script>
-    <script src="assets/js/jquery.slimscroll.min.js"></script>
-    <script src="assets/js/jquery.slicknav.min.js"></script>
+    <script src="{{ asset('/js/popper.min.js') }}"></script>
+    <script src="{{ asset('/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('/js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('/js/metisMenu.min.js') }}"></script>
+    <script src="{{ asset('/js/jquery.slimscroll.min.js') }}"></script>
+    <script src="{{ asset('/js/jquery.slicknav.min.js') }}"></script>
 
     <!-- start chart js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
@@ -660,16 +660,16 @@
     <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
     <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
     <!-- all line chart activation -->
-    <script src="assets/js/line-chart.js"></script>
+    <script src="{{ asset('/js/line-chart.js') }}"></script>
     <!-- all pie chart -->
-    <script src="assets/js/pie-chart.js"></script>
+    <script src="{{ asset('/js/pie-chart.js') }}"></script>
     <!-- all bar chart -->
-    <script src="assets/js/bar-chart.js"></script>
+    <script src="{{ asset('/js/bar-chart.js') }}"></script>
     <!-- all map chart -->
-    <script src="assets/js/maps.js"></script>
+    <script src="{{ asset('/js/maps.js') }}"></script>
     <!-- others plugins -->
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/scripts.js"></script>
+    <script src="{{ asset('/js/plugins.js') }}"></script>
+    <script src="{{ asset('/js/scripts.js') }}"></script>
 </body>
 
 </html>
