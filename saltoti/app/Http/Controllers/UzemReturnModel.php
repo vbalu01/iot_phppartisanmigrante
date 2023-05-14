@@ -19,6 +19,7 @@ class Kompresszor_m{
 class Elszivo_m{
     public $elszivoId;
     public $elszivoName;
+    public $kwhSzenzor;
     public $termeloGepek;
 }
 
@@ -32,7 +33,6 @@ class TermeloGep_m{
 class MertAdat_m{
     public $mertErtek;
     public $ertekValtozas;
-    public $sensor;
     public $mertIdo;
 }
 
