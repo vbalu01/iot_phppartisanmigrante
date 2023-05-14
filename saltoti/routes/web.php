@@ -18,4 +18,6 @@ use Illuminate\Support\Facades\DB;
 });*/
 
 Route::get('/',[App\Http\Controllers\MainController::class,'viewData']);
-Route::get('/uzem/{id}',[App\Http\Controllers\MainController::class,'uzem']);
+Route::get('/uzem/{id}/{pagemethod}',[App\Http\Controllers\MainController::class,'uzem']);
+Route::get('/dash',[App\Http\Controllers\MainController::class,'getUsems']);
+Route::get('/dash/uzem/{id}/{pagemethod}',[App\Http\Controllers\MainController::class,'uzem']);

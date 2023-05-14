@@ -15,13 +15,13 @@ class MainController extends Controller
         return View('view', ['data' => $tmp]);
     }
 
-    public function uzem($id)
+    public function uzem(Request $request)
     {
         $returnModel = new UzemReturnModel();
-        $returnModel->uzemId = DB::table('uzems')->select('ID')->where([['ID', '=', $id ]])->value('ID');
-        $returnModel->uzemName = DB::table('uzems')->select('name')->where([['ID', '=', $id ]])->value('name');
-        $termelogepek = DB::table('termelogeps')->where([['UzemID', '=', $id]])->get();
-        $kompresszorok = DB::table('kompresszors')->where([['UzemID', '=', $id]])->get();
+        $returnModel->uzemId = DB::table('uzems')->select('ID')->where([['ID', '=', $request->id ]])->value('ID');
+        $returnModel->uzemName = DB::table('uzems')->select('name')->where([['ID', '=', $request->id ]])->value('name');
+        $termelogepek = DB::table('termelogeps')->where([['UzemID', '=', $request->id]])->get();
+        $kompresszorok = DB::table('kompresszors')->where([['UzemID', '=', $request->id]])->get();
 
         $tmp = array();
         foreach($kompresszorok as $k){
@@ -82,7 +82,7 @@ class MainController extends Controller
 
                     $db_darabszenzor = DB::table('sensors')->select('ID', 'name', 'mertekegyseg')->where([['ID', '=', $g->darabszenzor]])->first();
                     $db_kwhSzenzor = DB::table('sensors')->select('ID', 'name', 'mertekegyseg')->where([['ID', '=', $g->kwhSzenzor]])->first();
-                    
+
                     $tmp_l->dbSzenzor->sensorId = $db_darabszenzor->ID;
                     $tmp_l->dbSzenzor->sensorName = $db_darabszenzor->name;
                     $tmp_l->dbSzenzor->mertekEgyseg = $db_darabszenzor->mertekegyseg;
@@ -144,7 +144,7 @@ class MainController extends Controller
 
                 $db_darabszenzor = DB::table('sensors')->select('ID', 'name', 'mertekegyseg')->where([['ID', '=', $g->darabszenzor]])->first();
                 $db_kwhSzenzor = DB::table('sensors')->select('ID', 'name', 'mertekegyseg')->where([['ID', '=', $g->kwhSzenzor]])->first();
-                
+
                 $tmp_l->dbSzenzor->sensorId = $db_darabszenzor->ID;
                 $tmp_l->dbSzenzor->sensorName = $db_darabszenzor->name;
                 $tmp_l->dbSzenzor->mertekEgyseg = $db_darabszenzor->mertekegyseg;
@@ -180,12 +180,27 @@ class MainController extends Controller
                 array_push($tmp, $elszivo);
             }
 
-            
+
 
         }
         $returnModel->elszivok = $tmp;
 
-        return View('uzem', ['data' => $returnModel]);
+        if( $request->pagemethod==0)
+        {
+            return View('uzem', ['data' => $returnModel]);
+        }
+        else if($request->pagemethod==1)
+        {
+            return View('stat', ['data' => $returnModel]);
+        }
+
+    }
+
+
+    public function getUsems()
+    {
+        $tmp = DB::table('uzems')->get();
+        return View('main', ['data' => $tmp]);
     }
 }
 

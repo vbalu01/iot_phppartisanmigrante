@@ -14,7 +14,7 @@
                     {{ $row->ID }}
                 </td>
                 <td>
-                    <a href="/uzem/{{ $row->ID }}">{{ $row->name }}</a>
+                    <a href="/uzem/{{ $row->ID }}/0">{{ $row->name }}</a>
                 </td>
             </tr>
         @endforeach
