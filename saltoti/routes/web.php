@@ -22,4 +22,6 @@ Route::get('/uzem/{id}/{pagemethod}',[App\Http\Controllers\MainController::class
 Route::get('/dash',[App\Http\Controllers\MainController::class,'getUsems']);
 Route::get('/dash/uzem/{id}/{pagemethod}',[App\Http\Controllers\MainController::class,'uzem']);
 
-Route::POST('/dash/kompresszor',[App\Http\Controllers\MainController::class,'getkwhChart']);
+Route::POST('/dash/kompresszor',[App\Http\Controllers\MainController::class,'getChart']);
+Route::POST('/dash/elszivo',[App\Http\Controllers\MainController::class,'getChart']);
+Route::POST('/dash/termelogep',[App\Http\Controllers\MainController::class,'getChart']);

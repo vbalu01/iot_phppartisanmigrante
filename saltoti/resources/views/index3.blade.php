@@ -39,7 +39,7 @@
         <div class="sidebar-menu">
             <div class="sidebar-header">
                 <div class="logo">
-                    <a href="index.html"><img src="{{ asset('/assets/images/icon/logo3.png') }}" alt="logo"></a>
+                    <a href="/dash"><img src="{{ asset('/assets/images/icon/logo3.png') }}" alt="logo"></a>
                 </div>
             </div>
             <div class="main-menu">
@@ -228,7 +228,7 @@
                         <div class="breadcrumbs-area clearfix">
                             <h4 class="page-title pull-left">Dashboard</h4>
                             <ul class="breadcrumbs pull-left">
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="/dash">Home</a></li>
                                 <li><span>Dashboard</span></li>
                             </ul>
                         </div>
@@ -250,20 +250,7 @@
             <div class="main-content-inner">
                 <div class="row" id="alma">
 
-
-
-
-                    <!-- sales area start -->
-                    <div class="col-xl-9 col-ml-8 col-lg-8 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="header-title">Sales</h4>
-                                <div id="salesanalytic"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- sales area end -->
-
+<!--////////////////////////////////////////////////////////////////////////////////////-->
 
 
                 </div>

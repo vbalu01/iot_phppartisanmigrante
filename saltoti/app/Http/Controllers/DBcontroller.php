@@ -47,7 +47,7 @@ class DBcontroller extends Controller
             $tmp_l->levegoSzenzor->mertekEgyseg = $db_sensor->mertekegyseg;
             $tmp_l->levegoSzenzor->mertAdatok = array();
 
-            foreach(DB::table('sensor_data')->select('mertertek', 'ertekvaltozas', 'mertIdo')->where([['sensorID', '=', $tmp_l->kwhSzenzor->sensorId]])->get() as $adat)
+            foreach(DB::table('sensor_data')->select('mertertek', 'ertekvaltozas', 'mertIdo')->where([['sensorID', '=', $tmp_l->levegoSzenzor->sensorId]])->get() as $adat)
             {
                 $tmp_adat = new MertAdat_m();
                 $tmp_adat->mertIdo = $adat->mertIdo;

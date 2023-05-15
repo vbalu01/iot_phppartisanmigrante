@@ -1359,7 +1359,7 @@ table.dbkit-table tr td {
 
 /* user-statistics */
 
-#user-statistics {
+.ustat {
     height: 350px;
 }
 
